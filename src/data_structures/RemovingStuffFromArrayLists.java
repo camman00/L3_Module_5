@@ -28,6 +28,11 @@ public class RemovingStuffFromArrayLists {
 		System.out.println(stuffIFoundInTheYard.size());
 
 		/* TODO 1: Clean out the dirt but keep the delicious worms. */
+		for(int x = 0;x < stuffIFoundInTheYard.size();x++) {
+			if(stuffIFoundInTheYard.get(x) instanceof Dirt) {
+				stuffIFoundInTheYard.remove(stuffIFoundInTheYard.get(x));
+			}
+		}
 
 		System.out.println(stuffIFoundInTheYard.size()); // should be 2
 
