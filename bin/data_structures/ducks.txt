@@ -1,0 +1,9 @@
+ArrayList<Duck> ducks = new ArrayList<Duck>();
+
+ducks.add(new Duck("Robust"));
+
+Duck duck = ducks.get(0);
+duck.feed();
+ducks.remove(0);
+
+for(Duck d : ducks) {d.feed();}
